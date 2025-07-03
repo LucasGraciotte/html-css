@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Lucas</title>
+
+    <style>
+
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        section {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: lightgrey;
+            background-color: rgba(0, 0, 0, 0.644);
+            width: 100%;
+            margin: 0;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1, p {
+            color: greenyellow;
+        }
+
+        table {
+           width: 100%;
+           max-width: 800px;
+           height: auto;
+           border-collapse: collapse;
+        }
+
+        .tabela { /*Chat gpt ensinou*/
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+        }
+
+        td{
+            word-wrap: break-word;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid black;
+        }
+
+        td.primeiros {
+            background-color: rgba(144, 238, 144, 0.678);
+            color: black;
+        }
+
+        tr.principal {
+            text-align: center;
+            background-color: rgba(0, 128, 0, 0.699);
+            color: white;
+            font-weight: bold;
+        }
+
+        tr.gastos {
+            background-color: greenyellow;
+            border: none;
+            color: black;
+        }
+
+        tr.gastos td {
+            text-align: left;
+            font-weight: bold;
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <section>
+        <h1>Planilha Financeira do Lucas</h1>
+        <h2>Salário do Menor aprendiz</h2>
+        <p>AcelorMittal</p>
+    </section>
+
+    <table class="tabela">
+        <tr class="principal"> <!--Primeira linha-->
+            <td>
+                Descrição
+            </td>
+            <td>
+                Valor (R$)
+            </td>
+            <td>
+                Observação
+            </td>
+        </tr>
+
+        <tr><!--segunda linha-->
+            <td class="primeiros">
+                Receita (Salário)
+            </td>
+            <td >
+                750
+            </td>
+            <td>
+                Salário mensal
+            </td>
+        </tr>
+
+        <tr class="gastos"> <!--terceira linha-->
+            <td colspan="3">
+                Gastos fixos
+            </td>
+        </tr>
+
+        <tr><!--quarta linha-->
+            <td class="primeiros">Gastos do pc</td>
+            <td>R$207,00</td>
+            <td>12xparcelas</td>
+        </tr>
+
+        <tr><!--quinta linha-->
+            <td class="primeiros">Parcela do Iphone 14</td>
+            <td>R$351,00</td>
+            <td>12xparcelas</td>
+        </tr>
+
+        <tr><!--sexta linha-->
+            <td class="primeiros">Corte de cabelo (2x meses)</td>
+            <td>R$60,00</td>
+            <td>R$30,00 x2</td>
+        </tr>
+
+        <tr><!--sétima linha-->
+            <td class="primeiros">total de gastos fixos</td>
+            <td>R$618</td>
+            <td></td>
+        </tr>
+
+        <tr><!--oitava linha-->
+            <td class="primeiros">Dinheiro sobrando</td>
+            <td>750-618</td>
+            <td>R$132</td>
+        </tr>
+    </table>
+</body>
+</html>
