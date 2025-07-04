@@ -13,6 +13,15 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1px;
+            background-color: lightgray;
+            border-radius: 2px;
         }
 
         td, th{
@@ -20,9 +29,19 @@
             padding: 10px;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -45,9 +64,12 @@
     -->
 
     <table>
+
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
-            <th>estado</th>
-            <th>população</th>
+            <th scope="col">estado</th>
+            <th scope="col" style="width: 50px;">população</th>
         </thead>
 
         <tbody>
@@ -163,11 +185,16 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">210.147.125</td>
             </tr>
         </tfoot>
     </table>
 
+    <!--Td=dados
+    th= titulo-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloremque provident ducimus accusamus fugiat possimus tempora, nemo facilis magni deserunt id quibusdam iure minima dolores mollitia, earum natus cupiditate repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo cumque ducimus? Repudiandae quis totam itaque corrupti repellendus dolores? Architecto illo libero similique quae repellendus animi minima nesciunt veritatis quidem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam omnis iste obcaecati eaque ea explicabo maiores a laborum, ducimus eos aperiam hic, quibusdam neque. Velit commodi vitae perspiciatis. Tempore, in? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores inventore libero temporibus odit numquam minima adipisci maiores laborum voluptatem at, consequatur ducimus perspiciatis modi quisquam, asperiores itaque consectetur cum ipsa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis cum officia tempora voluptatem alias aliquam. Id laborum necessitatibus repellat dicta aperiam autem sit laudantium dolorem at quisquam cumque, inventore tempora. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet ratione mollitia voluptatum ea fugit odit saepe sequi? Optio reiciendis, dolorum nihil ab quidem in, deserunt soluta sequi dolores voluptas ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae impedit recusandae maxime rem minima rerum laborum deserunt consequuntur cupiditate iusto sunt, cum eos provident! Dolor reprehenderit fugiat error distinctio veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, est? Laudantium modi dolorum doloremque soluta consequuntur vero, est sapiente illum aut adipisci, et, aliquid aliquam libero natus perspiciatis consequatur laboriosam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ipsum delectus suscipit velit nostrum repellendus cumque? Nisi, quibusdam nihil sapiente voluptas autem saepe doloribus, excepturi quas repellendus ut illum id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit repellendus repudiandae error, aspernatur, eos, a quis fuga quisquam quae itaque corporis ullam porro quaerat. Quas accusantium recusandae non fugit culpa.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officia earum fugit quo, ratione adipisci tempore autem temporibus, consequatur deserunt dignissimos praesentium quibusdam dolorum sit aliquid non unde esse rem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit itaque maxime nemo et! Optio sint laboriosam molestias, delectus enim esse soluta illo labore ea corrupti quia ut pariatur neque repellendus.</p>
 </body>
 </html>
